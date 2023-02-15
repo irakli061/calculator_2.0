@@ -16,13 +16,16 @@ function setOperation(operation) {
 function calculate() {
   number2 = Number(result_text.innerHTML);
   if (savedOperation === "+") {
-    result_text.innerHTML = number1 + number2;
+    let result = number1 + number2;
+    result_text.innerHTML = result.toFixed(3);
   }
   if (savedOperation === "-") {
-    result_text.innerHTML = number1 - number2;
+    let result = number1 - number2;
+    result_text.innerHTML = result.toFixed(3);
   }
   if (savedOperation === "*") {
-    result_text.innerHTML = number1 * number2;
+    let result = number1 * number2;
+    result_text.innerHTML = result.toFixed(3);
   }
   if (savedOperation === "/") {
     let result = number1 / number2;
