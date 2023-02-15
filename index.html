@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>calculator 2.0</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>calculator</h1>
+    <div class="main_div">
+      <div class="result">
+        <h1 id="result"></h1>
+      </div>
+      <div class="mathematics">
+        <button onclick="setOperation('+')" class="math">+</button>
+        <br />
+        <button onclick="setOperation('-')" class="math">-</button>
+        <br />
+        <button onclick="setOperation('*')" class="math">*</button>
+        <br />
+        <button onclick="setOperation('/')" class="math">/</button>
+      </div>
+      <div class="first_line">
+        <button onclick="addSymbol('1')">1</button>
+        <button onclick="addSymbol('2')">2</button>
+        <button onclick="addSymbol('3')">3</button>
+      </div>
+      <div class="second_line">
+        <button onclick="addSymbol('4')">4</button>
+        <button onclick="addSymbol('5')">5</button>
+        <button onclick="addSymbol('6')">6</button>
+      </div>
+      <div class="third_line">
+        <button onclick="addSymbol('7')">7</button>
+        <button onclick="addSymbol('8')">8</button>
+        <button onclick="addSymbol('9')">9</button>
+      </div>
+      <div class="fourth_line">
+        <button onclick="setOperation('C')" class="C">C</button>
+
+        <button onclick="addSymbol('0')">0</button>
+
+        <button onclick="calculate()" class="calculate">=</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
