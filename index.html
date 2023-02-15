@@ -1,48 +1,58 @@
 <html>
   <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
     <title>calculator 2.0</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>calculator</h1>
+    <div class="header">
+      <h1><center>calculator</center></h1>
+    </div>
     <div class="main_div">
       <div class="result">
         <h1 id="result"></h1>
       </div>
-      <div class="mathematics">
-        <button onclick="setOperationClear('C')" class="C math">C</button>
-        <br>
+
+      <div class="mathematics a">
         <button onclick="setOperation('+')" class="math">+</button>
         <br />
         <button onclick="setOperation('-')" class="math">-</button>
         <br />
+        <button onclick="setOperationClear('C')" class="C math">C</button>
+      </div>
+      <div class="mathematics b">
         <button onclick="setOperation('*')" class="math">*</button>
         <br />
         <button onclick="setOperation('/')" class="math">/</button>
         <br />
         <button onclick="calculate()" class="calculate math">=</button>
       </div>
-      <div class="first_line">
+      <div class="first_line line">
         <button onclick="addSymbol('1')">1</button>
         <button onclick="addSymbol('2')">2</button>
         <button onclick="addSymbol('3')">3</button>
       </div>
-      <div class="second_line">
+      <div class="second_line line">
         <button onclick="addSymbol('4')">4</button>
         <button onclick="addSymbol('5')">5</button>
         <button onclick="addSymbol('6')">6</button>
       </div>
-      <div class="third_line">
+      <div class="third_line line">
         <button onclick="addSymbol('7')">7</button>
         <button onclick="addSymbol('8')">8</button>
         <button onclick="addSymbol('9')">9</button>
       </div>
-      <div class="fourth_line">
+      <div class="fourth_line line">
+        <button onclick="addSymbol('.')">.</button>
+
         <button onclick="addSymbol('0')">0</button>
 
-        <button onclick="addSymbol('.')">.</button>
-        <button onclick="backspace()" class="backspace"><i class="bi bi-backspace"></i></button>
+        <button onclick="backspace()" class="backspace">
+          <i class="bi bi-backspace"></i>
+        </button>
       </div>
     </div>
     <script src="script.js"></script>

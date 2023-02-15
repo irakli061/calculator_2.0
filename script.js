@@ -42,3 +42,4 @@ function setOperationClear(operation) {
 function backspace() {
   result_text.innerHTML = result_text.innerHTML.slice(0, -1);
 }
+
