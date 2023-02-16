@@ -31,6 +31,10 @@ function calculate() {
     let result = number1 / number2;
     result_text.innerHTML = result.toFixed(3);
   }
+  if (savedOperation === "%") {
+    let result = (number1 / 100) * number2;
+    result_text.innerHTML = result.toFixed(3);
+  }
 }
 
 function setOperationClear(operation) {
@@ -43,3 +47,7 @@ function backspace() {
   result_text.innerHTML = result_text.innerHTML.slice(0, -1);
 }
 
+function convert() {
+  var sqRoot = Math.sqrt(number.value);
+  result.innerHTML = sqRoot.toFixed(2);
+}
